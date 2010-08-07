@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rack-evil_robot"
-    gem.summary = "Detect robots that are ignoring your robots.txt file and give them the middle finger"
-    gem.description = "Detect robots that are ignoring your robots.txt file and give them the middle finger"
+    gem.summary = "Detect crawlers that are ignoring your robots.txt file and give them the middle finger."
+    gem.description = "Robots are good, they crawl your site and bring people to it.  Evil robots are bad, they slam your site, follow links they shouldn't and generally are a pain. Using Rack::EvilRobot you can tell them what's up, and keep them away for good."
     gem.email = "shanewolf@gmail.com"
     gem.homepage = "http://github.com/gizm0duck/rack-evil_robot"
     gem.authors = ["Shane Wolf"]
