@@ -6,7 +6,7 @@ sudo gem install rack-evil_robot
 
 == SETUP
 
-  require 'rack/contrib'
+  require 'rack/evil_robot'
   use Rack::EvilRobot
   
   or

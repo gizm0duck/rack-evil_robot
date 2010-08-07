@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "rake-evil_robot"
+    gem.name = "rack-evil_robot"
     gem.summary = "Detect robots that are ignoring your robots.txt file and give them the middle finger"
     gem.description = "Detect robots that are ignoring your robots.txt file and give them the middle finger"
     gem.email = "shanewolf@gmail.com"
@@ -38,7 +38,7 @@ Rake::RDocTask.new do |rdoc|
   version = File.exist?('VERSION') ? File.read('VERSION') : ""
 
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "rake-evil_robot #{version}"
+  rdoc.title = "rack-evil_robot #{version}"
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
