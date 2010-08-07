@@ -22,7 +22,7 @@ Once you have a list (you'll see how to build one in the next section) you will 
     class EvilRobot
       def evil_robots
         # add your evil-bots here... these are just for examples sake
-        /badBot|reallyBadBot/i
+        /badBot|reallyBadBot|Robokiyu/i
       end
     end
   end
