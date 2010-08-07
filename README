@@ -1,0 +1,27 @@
+** INSTALL **
+
+sudo gem install rack-evil_robot
+
+** SETUP **
+
+require 'rack/contrib'
+
+use Rack::EvilRobot
+
+optionally you can configure the url that evil robots get sent to using:
+
+use Rack::EvilRobot, :redirect_path => "http://www.whatever-you-want.com"
+
+** SET THE TRAP **
+
+Update your robots.txt to contain these lines
+
+User-agent: *
+Disallow: /honey_pot/index.html
+
+After you have this set up for a few days check your access logs and look at the user agents that have been accessing /honey_pot/index.html.
+Hopefully there is nothing there, but if there is, and they are misbehaving, add them to the regex defined in the 'evil_robots' method.
+This will prevent this user agent from accessing any pages on your site anymore.
+
+** Win **
+Now you don't have to worry about getting crawled by bots you don't care to be hit by (mp3 bots, torrent bots, bots that are slamming your servers, etc...)
