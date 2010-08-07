@@ -1,8 +1,11 @@
 = Rack::EvilRobot
 
+Robots are good, they crawl your site and bring people to it.  Evil robots are bad, they slam your site, follow links they shouldn't and generally are a pain.
+Using Rack::EvilRobot you can tell them what's up, and keep them away for good.
+
 == INSTALL
 
-sudo gem install rack-evil_robot
+  sudo gem install rack-evil_robot
 
 == SETUP
 
