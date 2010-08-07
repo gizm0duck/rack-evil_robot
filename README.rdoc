@@ -16,6 +16,17 @@ Using Rack::EvilRobot you can tell them what's up, and keep them away for good.
   
   use Rack::EvilRobot, :redirect_path => "http://www.whatever-you-want.com"
 
+Once you have a list (you'll see how to build one in the next section) you will want to tell the app which ones to allow, so put this code somewhere in your loadpath
+  
+  module Rack
+    class EvilRobot
+      def evil_robots
+        # add your evil-bots here... these are just for examples sake
+        /badBot|reallyBadBot/i
+      end
+    end
+  end
+
 == SET THE TRAP
 
 Update your robots.txt to contain these lines
