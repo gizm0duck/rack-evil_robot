@@ -19,6 +19,9 @@ Update your robots.txt to contain these lines
 User-agent: *
 Disallow: /honey_pot/index.html
 
+Include this link tag on your page(s)
+<a href="/honey_pot/index.html"><img src="images/pixel.gif" border="0" alt=" " width="1" height="1"></a>
+
 After you have this set up for a few days check your access logs and look at the user agents that have been accessing /honey_pot/index.html.
 Hopefully there is nothing there, but if there is, and they are misbehaving, add them to the regex defined in the 'evil_robots' method.
 This will prevent this user agent from accessing any pages on your site anymore.
