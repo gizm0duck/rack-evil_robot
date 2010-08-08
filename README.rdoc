@@ -10,10 +10,9 @@ Using Rack::EvilRobot you can tell them what's up, and keep them away for good.
 == SETUP
 
   require 'rack/evil_robot'
+  
   use Rack::EvilRobot
-  
   or
-  
   use Rack::EvilRobot, :redirect_path => "http://www.whatever-you-want.com"
 
 Once you have a list (you'll see how to build one in the next section) you will want to tell the app which ones to allow, so put this code somewhere in your load path.

@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Shane Wolf"]
   s.date = %q{2010-08-06}
-  s.description = %q{Detect robots that are ignoring your robots.txt file and give them the middle finger}
+  s.description = %q{Robots are good, they crawl your site and bring people to it.  Evil robots are bad, they slam your site, follow links they shouldn't and generally are a pain. Using Rack::EvilRobot you can tell them what's up, and keep them away for good.}
   s.email = %q{shanewolf@gmail.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "lib/rack/evil_robot.rb",
+     "rack-evil_robot.gemspec",
      "rake-evil_robot.gemspec",
      "spec/rack/evil_robot_spec.rb",
      "spec/spec_helper.rb"
@@ -29,7 +30,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{Detect robots that are ignoring your robots.txt file and give them the middle finger}
+  s.summary = %q{Detect crawlers that are ignoring your robots.txt file and give them the middle finger.}
   s.test_files = [
     "spec/rack/evil_robot_spec.rb",
      "spec/spec_helper.rb"
